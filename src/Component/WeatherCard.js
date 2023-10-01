@@ -8,7 +8,7 @@ function WeatherCard(props) {
 
   useEffect(() => {
     function WeatherApi() {
-      const api_key = "af838b5859ce59f81337b93a1acf0590";
+      const api_key = "b77df33a0f3ac5b4b707dc648f48d8d4";
       const apiLink = `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${api_key}&units=metric`;
 
       fetch(apiLink)
