@@ -14,12 +14,12 @@ function WeatherCard(props) {
       fetch(apiLink)
         .then((response) => response.json())
         .then((data) => {
-          console.log(data);
+          
           const noonForecasts = data.list.filter((forecast) =>
             forecast.dt_txt.includes("12:00:00")
           );
           const resultWeather = [data.list[0], ...noonForecasts];
-          console.table(resultWeather);
+         
           const dailyForecasts = resultWeather.map((forecastItem) => {
             const localDate = new Date(forecastItem.dt_txt);
 
