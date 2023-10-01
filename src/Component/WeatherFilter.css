@@ -1,0 +1,72 @@
+.filter {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.filter__input {
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 3rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  
+}
+
+.filter__input::placeholder {
+  color: #fff;
+}
+
+.filter__button {
+  background-color: #333;
+  border-radius: 3rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: .9rem 1.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  border: none;
+  transition: all .3s;
+  font-weight: 800;
+}
+
+.filter__button:hover {
+  color: #333;
+  background-color: #fff;
+  
+}
+.filter__button:active{
+  transform: scale(.95) translateY(3px);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.6);
+
+}
+
+.suggestions-list {
+  position: absolute;
+  background-color: #333;
+  color: #eaeaea;
+  font-size: 1.6rem;
+  width: 80%;
+  max-height: 20rem;
+  overflow-y: auto;
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.suggestions-list::-webkit-scrollbar {
+  width: 0;  
+  height: 0; 
+}
+
+.suggestions-list li {
+  padding: 8px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.suggestions-list li:hover {
+  background-color: #eaeaea;
+  color: #333;
+}
+
