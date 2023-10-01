@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import WeatherFilter from "./Component/WeatherFilter";
 import WeatherCard from "./Component/WeatherCard";
 
